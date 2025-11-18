@@ -17,7 +17,7 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # 환경 변수가 없으면 직접 API 키 입력 (보안상 .env 파일 사용 권장)
 if not GOOGLE_API_KEY:
-    GOOGLE_API_KEY = "AIzaSyBS5GMohTcLt3W35Xv5wuyoaGZGh88HJ5E"
+    GOOGLE_API_KEY = ""
 
 if not GOOGLE_API_KEY:
     raise ValueError("Google API 키가 설정되지 않았습니다. 환경 변수 GOOGLE_API_KEY를 설정하거나 코드에 직접 입력하세요.")
@@ -131,3 +131,4 @@ if __name__ == "__main__":
         max_rows=None,       # 전체 돌릴 땐 None으로 바꾸기
         sleep_sec=0.2,
     )
+
